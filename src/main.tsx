@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Grid, Html, useGLTF, useAnimations } from '@react-three/drei';
 import * as THREE from 'three';
+import { clone as cloneSkeleton } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import manifest from '../data/assets.json';
 import './style.css';
 import Game from './gameplay/Game';
@@ -22,7 +23,7 @@ function Provisional() {
 function Model({asset,clip,onInspect}:{asset:Asset;clip:string;onInspect:(v:Inspection)=>void}) {
  const url=asset.file.startsWith('blob:') ? asset.file : import.meta.env.BASE_URL + asset.file.replace(/^\/+/, '').replace(/^public\//, '');
  const {scene,animations}=useGLTF(url);
- const model=useMemo(()=>scene.clone(true),[scene]);
+ const model=useMemo(()=>cloneSkeleton(scene),[scene]);
  const {actions}=useAnimations(animations,model);
  useEffect(()=>{
   const size=new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3());
@@ -49,6 +50,7 @@ function App(){
  const [selected,setSelected]=useState(''); const [clip,setClip]=useState('');
  const [inspection,setInspection]=useState<Inspection|null>(null);
  const [error,setError]=useState('');
+ useEffect(()=>{const onError=(event:ErrorEvent)=>setError('Error JS: '+event.message);const onRejection=(event:PromiseRejectionEvent)=>setError('Error de carga: '+String(event.reason));window.addEventListener('error',onError);window.addEventListener('unhandledrejection',onRejection);return()=>{window.removeEventListener('error',onError);window.removeEventListener('unhandledrejection',onRejection)}},[]);
  const asset=assets.find(a=>a.id===selected);
  const inspect=React.useCallback((value:Inspection)=>{setInspection(value);setError('')},[]);
  function upload(file:File){
