@@ -13,7 +13,7 @@ function Provisional() {
  return <group><mesh position={[0,0.375,0]}><boxGeometry args={[1.5,0.75,0.75]}/><meshStandardMaterial color="#987b5b"/></mesh><mesh position={[2,0.5,0]}><boxGeometry args={[0.5,1,0.5]}/><meshStandardMaterial color="#547a9a"/></mesh><Html position={[0,1.3,0]} center><span className="hint">PROVISIONAL · NO ES A-001</span></Html></group>;
 }
 function Model({asset,clip,onInspect}:{asset:Asset;clip:string;onInspect:(v:Inspection)=>void}) {
- const url=asset.file.startsWith('blob:')?asset.file:'/'+asset.file.replace(/^\\/+/, '').replace(/^public\\//,'');
+ const url=asset.file.startsWith('blob:') ? asset.file : '/' + asset.file.replace(/^\/+/, '').replace(/^public\//, '');
  const {scene,animations}=useGLTF(url);
  const model=useMemo(()=>scene.clone(true),[scene]);
  const {actions}=useAnimations(animations,model);
