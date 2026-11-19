@@ -1,0 +1,37 @@
+{
+  "references": [
+    {
+      "reference_id": "reference.prototype_desk.001",
+      "title": "Escritorio de integración",
+      "description": "Tablero de 1,40 × 0,70 m a 0,75 m sobre el piso y estructura metálica.",
+      "source": "Diseño provisional de Cuenta A, dimensionado para verificar la escala del juego",
+      "captured_at": null,
+      "path_or_url": "source_3d/scripts/generate_a001.mjs",
+      "status": "provisional",
+      "applies_to": ["furniture.desk.001"],
+      "notes": "Dimensiones de diseño. Todavía se requieren fotos y mediciones de la oficina."
+    },
+    {
+      "reference_id": "reference.prototype_chair.001",
+      "title": "Silla de integración",
+      "description": "Silla de cuatro patas con asiento a 0,46 m y respaldo detrás del asiento.",
+      "source": "Diseño provisional de Cuenta A para probar orientación y anclaje",
+      "captured_at": null,
+      "path_or_url": "source_3d/scripts/generate_a001.mjs",
+      "status": "provisional",
+      "applies_to": ["furniture.chair.001"],
+      "notes": "Dimensiones de diseño. El anclaje corresponde a la superficie del asiento."
+    },
+    {
+      "reference_id": "reference.prototype_employee.001",
+      "title": "Empleado de integración",
+      "description": "Personaje humano estilizado de 1,70 m para la prueba de escala, rig y animaciones.",
+      "source": "Diseño original provisional de Cuenta A",
+      "captured_at": null,
+      "path_or_url": "source_3d/scripts/generate_a001.mjs",
+      "status": "provisional",
+      "applies_to": ["char.employee.001"],
+      "notes": "Altura de diseño medida con el rig en reposo. La identidad visual del personaje queda pendiente."
+    }
+  ]
+}

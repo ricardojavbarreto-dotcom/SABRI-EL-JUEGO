@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Manifiesto de recursos de Sabri Game · propuesta A-001",
+  "description": "Propuesta para revisión conjunta. Mantiene los campos mínimos del Contrato 1.0.",
+  "type": "object",
+  "required": ["schema_version", "schema_status", "contract_version", "package_id", "package_version", "coordinates", "files", "assets"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "schema_status": { "const": "proposal_for_a001" },
+    "contract_version": { "const": "1.0" },
+    "package_id": { "const": "A-001" },
+    "package_version": { "$ref": "#/$defs/version" },
+    "coordinates": {
+      "type": "object",
+      "required": ["dimension_order", "unit", "up", "character_front", "handedness"],
+      "properties": {
+        "dimension_order": { "const": ["X", "Y", "Z"] },
+        "unit": { "const": "m" },
+        "up": { "const": "+Y" },
+        "character_front": { "const": "+Z" },
+        "handedness": { "const": "right" }
+      }
+    },
+    "files": { "type": "object", "additionalProperties": { "$ref": "#/$defs/path" } },
+    "assets": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/asset" } }
+  },
+  "$defs": {
+    "version": { "type": "string", "pattern": "^[0-9]+[.][0-9]+[.][0-9]+$" },
+    "id": {
+      "type": "string",
+      "pattern": "^(env|furniture|prop|char|anchor|interaction|event|dialogue|reference)[.][a-z][a-z0-9_]*[.][0-9]{3}$"
+    },
+    "path": { "type": "string", "pattern": "^[A-Za-z0-9_-]+(/[A-Za-z0-9_.-]+)+$" },
+    "vector3": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "number" } },
+    "strings": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "asset": {
+      "type": "object",
+      "required": ["id", "type", "version", "status", "fidelity", "file", "file_size_bytes", "sha256", "source", "dimensions_m", "bounds_m", "triangles", "materials", "textures", "root", "pivot_m", "initial_rotation_xyzw", "scale", "hierarchy", "anchors", "anchor_details", "animations", "animation_details", "pending_animations", "references", "limitations"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "type": { "enum": ["char", "furniture"] },
+        "version": { "$ref": "#/$defs/version" },
+        "status": { "enum": ["planned", "in_progress", "ready_for_review", "accepted", "deprecated"] },
+        "fidelity": { "const": "provisional" },
+        "file": { "type": "string", "pattern": "^assets/(furniture|characters)/[a-z][a-z0-9_]*[.]glb$" },
+        "file_size_bytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "source": {
+          "type": "object",
+          "required": ["generator", "blender_script", "blend_file"],
+          "properties": {
+            "generator": { "$ref": "#/$defs/path" },
+            "blender_script": { "$ref": "#/$defs/path" },
+            "blend_file": { "anyOf": [{ "$ref": "#/$defs/path" }, { "type": "null" }] }
+          }
+        },
+        "dimensions_m": { "allOf": [{ "$ref": "#/$defs/vector3" }, { "items": { "exclusiveMinimum": 0 } }] },
+        "bounds_m": {
+          "type": "object",
+          "required": ["min", "max"],
+          "properties": {
+            "min": { "$ref": "#/$defs/vector3" },
+            "max": { "$ref": "#/$defs/vector3" }
+          }
+        },
+        "triangles": { "type": "integer", "minimum": 1 },
+        "materials": { "$ref": "#/$defs/strings" },
+        "textures": { "$ref": "#/$defs/strings" },
+        "root": { "const": "ROOT" },
+        "pivot_m": { "const": [0, 0, 0] },
+        "initial_rotation_xyzw": { "const": [0, 0, 0, 1] },
+        "scale": { "const": [1, 1, 1] },
+        "front": { "const": "+Z" },
+        "rig": { "type": "string" },
+        "joints": { "$ref": "#/$defs/strings" },
+        "hierarchy": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name", "children"],
+            "properties": {
+              "name": { "type": "string" },
+              "children": { "$ref": "#/$defs/strings" }
+            }
+          }
+        },
+        "anchors": { "$ref": "#/$defs/strings" },
+        "anchor_details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "translation_m", "forward", "purpose"],
+            "properties": {
+              "name": { "type": "string", "pattern": "^ANCHOR_[A-Z_]+$" },
+              "translation_m": { "$ref": "#/$defs/vector3" },
+              "forward": { "const": "+Z" },
+              "purpose": { "type": "string" }
+            }
+          }
+        },
+        "animations": { "$ref": "#/$defs/strings" },
+        "animation_details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "duration_s", "loop", "in_place", "channels"],
+            "properties": {
+              "name": { "enum": ["Idle", "Walk", "Sit", "Talk", "Interact", "React"] },
+              "duration_s": { "type": "number", "exclusiveMinimum": 0 },
+              "loop": { "type": "boolean" },
+              "in_place": { "type": "boolean" },
+              "channels": { "type": "integer", "minimum": 1 }
+            }
+          }
+        },
+        "pending_animations": { "$ref": "#/$defs/strings" },
+        "references": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "limitations": { "$ref": "#/$defs/strings" }
+      },
+      "if": { "properties": { "type": { "const": "char" } } },
+      "then": { "required": ["front", "rig", "joints"] }
+    }
+  }
+}
