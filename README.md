@@ -1,13 +1,19 @@
 # SABRI — EL JUEGO
 
-Videojuego 3D de oficina para navegador. Proyecto colaborativo bajo el Contrato Técnico Compartido V1.0.
+Videojuego 3D colaborativo para navegador.
 
-- Cuenta A: modelos 3D, personajes, texturas y animaciones (`assets/`, `source_3d/`).
-- Cuenta B: motor web, lógica e interfaz (`src/`).
-- `data/` y `docs/` son compartidos.
+## Equipos
+- **Cuenta A** (`cuenta-a-modelado`): Blender, recursos GLB, animaciones, texturas.
+- **Cuenta B** (`cuenta-b-desarrollo`): TypeScript, Three.js, React Three Fiber, mecánicas e interfaz.
+- **main**: versión estable, integración mediante pull requests.
 
-## Flujo de trabajo
+## Desarrollo local
 
-`main` es la rama de integración estable. Cada cuenta trabaja en su rama (`cuenta-a-modelado`, `cuenta-b-desarrollo`) y solicita integración mediante pull request revisada.
+```bash
+npm install
+npm run dev
+```
 
-**Estado:** inicialización del repositorio. Ningún recurso GLB ha sido integrado o validado todavía.
+El visor B-001 está en desarrollo. El manifiesto `data/assets.json` está vacío hasta recibir A-001. Colocar GLB bajo `public/assets/` y declarar sus rutas `assets/...` en el manifiesto.
+
+Contrato técnico compartido V1.0: no modificar convenciones sin aprobación de ambos equipos.
