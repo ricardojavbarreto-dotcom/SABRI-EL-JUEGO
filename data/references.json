@@ -8,7 +8,9 @@
       "captured_at": null,
       "path_or_url": "source_3d/scripts/generate_a001.mjs",
       "status": "provisional",
-      "applies_to": ["furniture.desk.001"],
+      "applies_to": [
+        "furniture.desk.001"
+      ],
       "notes": "Dimensiones de diseño. Todavía se requieren fotos y mediciones de la oficina."
     },
     {
@@ -19,7 +21,9 @@
       "captured_at": null,
       "path_or_url": "source_3d/scripts/generate_a001.mjs",
       "status": "provisional",
-      "applies_to": ["furniture.chair.001"],
+      "applies_to": [
+        "furniture.chair.001"
+      ],
       "notes": "Dimensiones de diseño. El anclaje corresponde a la superficie del asiento."
     },
     {
@@ -30,8 +34,83 @@
       "captured_at": null,
       "path_or_url": "source_3d/scripts/generate_a001.mjs",
       "status": "provisional",
-      "applies_to": ["char.employee.001"],
+      "applies_to": [
+        "char.employee.001"
+      ],
       "notes": "Altura de diseño medida con el rig en reposo. La identidad visual del personaje queda pendiente."
+    },
+    {
+      "reference_id": "reference.office_photo.001",
+      "title": "Vista general del escritorio largo",
+      "description": "Tablero blanco alargado y fila de puestos. El mueble de madera aparece adosado en un extremo.",
+      "source": "Fotografías de oficina aportadas por Gastón Janza",
+      "captured_at": null,
+      "path_or_url": "WhatsApp Unknown 2026-11-19 at 13.54.09.zip!/WhatsApp Image 2026-11-19 at 13.48.18.jpeg",
+      "status": "confirmed",
+      "applies_to": [
+        "furniture.desk.001",
+        "env.desk_cluster.001"
+      ],
+      "notes": "Confirma el aspecto general. El espesor del tablero sigue interpretado de la foto."
+    },
+    {
+      "reference_id": "reference.office_photo.002",
+      "title": "Vista lateral del tablero y los apoyos",
+      "description": "Canto recto del tablero blanco, paneles verticales blancos y un pasacables circular.",
+      "source": "Fotografías de oficina aportadas por Gastón Janza",
+      "captured_at": null,
+      "path_or_url": "WhatsApp Unknown 2026-11-19 at 13.54.09.zip!/WhatsApp Image 2026-11-19 at 13.48.13.jpeg",
+      "status": "confirmed",
+      "applies_to": [
+        "furniture.desk.001",
+        "env.desk_cluster.001"
+      ],
+      "notes": "Se tomaron como referencia los apoyos de panel, los pasacables y las sillas de oficina oscuras con ruedas."
+    },
+    {
+      "reference_id": "reference.office_photo.003",
+      "title": "Vista desde el extremo del escritorio",
+      "description": "Dos hileras de puestos enfrentados a lo largo del tablero.",
+      "source": "Fotografías de oficina aportadas por Gastón Janza",
+      "captured_at": null,
+      "path_or_url": "WhatsApp Unknown 2026-11-19 at 13.54.09.zip!/WhatsApp Image 2026-11-19 at 13.48.15 (1).jpeg",
+      "status": "confirmed",
+      "applies_to": [
+        "furniture.desk.001",
+        "env.desk_cluster.001"
+      ],
+      "notes": "La corrección dibujada define la modulación de esta revisión."
+    },
+    {
+      "reference_id": "reference.desk_measurement.001",
+      "title": "Medidas exteriores del escritorio blanco",
+      "description": "Largo 4,70 m, ancho 1,20 m y altura del tablero 0,75 m.",
+      "source": "Medidas informadas por Gastón Janza para A-002",
+      "captured_at": "2026-11-19",
+      "path_or_url": "Conversación de coordinación de Sabri Game con Cuenta A",
+      "status": "confirmed",
+      "applies_to": [
+        "furniture.desk.001",
+        "env.desk_cluster.001"
+      ],
+      "notes": "Corresponden al escritorio. La posición y dimensiones de las sillas y accesorios se interpretaron de las fotografías."
+    },
+    {
+      "reference_id": "reference.layout_markup.001",
+      "title": "JPG corregido por Gastón",
+      "description": "El escritorio faltante está incluido en los 4,70 m. Cuatro módulos iguales y ocho sillas son la interpretación de la imagen; seis monitores visibles.",
+      "applies_to": [
+        "furniture.desk.001",
+        "env.desk_cluster.001"
+      ]
+    },
+    {
+      "reference_id": "reference.sideboard.001",
+      "title": "Mueble bajo en la cabecera",
+      "description": "Fotos 23–26 del relevamiento. Puertas corredizas, tapa con canto oscuro, cafetera y recipiente claro. Dimensiones estimadas.",
+      "applies_to": [
+        "env.desk_cluster.001"
+      ]
     }
   ]
 }

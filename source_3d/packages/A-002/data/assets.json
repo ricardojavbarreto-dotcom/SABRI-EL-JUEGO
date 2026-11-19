@@ -1,0 +1,647 @@
+{
+  "schema_version": "1.0.0",
+  "contract_version": "1.0",
+  "package_id": "A-002",
+  "package_version": "0.4.0",
+  "delivery_mode": "delta",
+  "coordinates": {
+    "dimension_order": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "unit": "m",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "files": {
+    "glb": "assets/furniture/desk_001.glb",
+    "cluster": "assets/environment/desk_cluster_001.glb",
+    "manifest": "data/assets.json",
+    "references": "data/references.json",
+    "generator": "source_3d/scripts/generate_a002.mjs",
+    "blender": "source_3d/scripts/create_blends.py",
+    "verifier": "source_3d/scripts/verify_a002.mjs",
+    "report": "docs/REPORTE_INTEGRACION_CUENTA_A.md"
+  },
+  "assets": [
+    {
+      "id": "furniture.desk.001",
+      "type": "furniture",
+      "file": "assets/furniture/desk_001.glb",
+      "version": "1.2.0",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file_size_bytes": 103860,
+      "sha256": "706e40dff713e5a07d444499f1cd7a9e20c22d9c46d210b7ca2808f2887f1567",
+      "source": {
+        "generator": "source_3d/scripts/generate_a002.mjs",
+        "blender_script": "source_3d/scripts/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        4.7,
+        0.751,
+        1.2
+      ],
+      "bounds_m": {
+        "min": [
+          -2.35,
+          0,
+          -0.6
+        ],
+        "max": [
+          2.35,
+          0.751,
+          0.6
+        ]
+      },
+      "nominal_worktop_height_m": 0.75,
+      "triangles": 1992,
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "VISUAL",
+            "ANCHOR_DESK_TOP"
+          ]
+        },
+        {
+          "name": "VISUAL",
+          "children": [
+            "DESK_TOP",
+            "DESK_FRAME",
+            "DESK_CABLE_COVERS"
+          ]
+        },
+        {
+          "name": "DESK_TOP",
+          "children": []
+        },
+        {
+          "name": "DESK_FRAME",
+          "children": []
+        },
+        {
+          "name": "DESK_CABLE_COVERS",
+          "children": []
+        },
+        {
+          "name": "ANCHOR_DESK_TOP",
+          "children": []
+        }
+      ],
+      "materials": [
+        "MAT_WHITE_LAMINATE",
+        "MAT_WHITE_PANEL",
+        "MAT_PANEL_GLIDE",
+        "MAT_CABLE_CAP",
+        "MAT_CABLE_SLOT"
+      ],
+      "textures": [],
+      "anchors": [
+        "ANCHOR_DESK_TOP"
+      ],
+      "anchor_details": [
+        {
+          "name": "ANCHOR_DESK_TOP",
+          "translation_m": [
+            0,
+            0.75,
+            0
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del tablero a su altura nominal, sobre la unión longitudinal."
+        }
+      ],
+      "animations": [],
+      "animation_details": [],
+      "pending_animations": [],
+      "references": [
+        "reference.office_photo.001",
+        "reference.office_photo.002",
+        "reference.office_photo.003",
+        "reference.desk_measurement.001",
+        "reference.layout_markup.001"
+      ],
+      "replaces": {
+        "package_id": "A-001",
+        "asset_version": "0.1.0"
+      },
+      "measurement_status": "confirmed",
+      "limitations": [
+        "Modulación de cuatro tramos por lado interpretada de las fotos",
+        "Cubiertas de cables representadas cerradas"
+      ]
+    },
+    {
+      "id": "env.desk_cluster.001",
+      "type": "env",
+      "file": "assets/environment/desk_cluster_001.glb",
+      "version": "0.3.0",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file_size_bytes": 523176,
+      "sha256": "8ad5a8e1a165a0a3b10e0bfc3e3d618440e96073c05ea568b6def8f836a84cef",
+      "source": {
+        "generator": "source_3d/scripts/generate_a002.mjs",
+        "blender_script": "source_3d/scripts/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        5.214,
+        1.159,
+        2.570554
+      ],
+      "bounds_m": {
+        "min": [
+          -2.864,
+          0,
+          -1.285277
+        ],
+        "max": [
+          2.35,
+          1.159,
+          1.285277
+        ]
+      },
+      "nominal_worktop_height_m": 0.75,
+      "triangles": 30204,
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "VISUAL",
+          "children": [
+            "DESK",
+            "SIDEBOARD_LEFT",
+            "WORKSTATION_01",
+            "WORKSTATION_07",
+            "WORKSTATION_02",
+            "WORKSTATION_03",
+            "WORKSTATION_04",
+            "WORKSTATION_08",
+            "WORKSTATION_05",
+            "WORKSTATION_06"
+          ]
+        },
+        {
+          "name": "DESK",
+          "children": [
+            "DESK_TOP",
+            "DESK_FRAME",
+            "DESK_CABLE_COVERS",
+            "ANCHOR_DESK_TOP"
+          ]
+        },
+        {
+          "name": "DESK_TOP",
+          "children": []
+        },
+        {
+          "name": "DESK_FRAME",
+          "children": []
+        },
+        {
+          "name": "DESK_CABLE_COVERS",
+          "children": []
+        },
+        {
+          "name": "ANCHOR_DESK_TOP",
+          "children": []
+        },
+        {
+          "name": "SIDEBOARD_LEFT",
+          "children": [
+            "SIDEBOARD_BODY",
+            "SIDEBOARD_DOOR_01",
+            "SIDEBOARD_DOOR_02",
+            "SIDEBOARD_COFFEE"
+          ]
+        },
+        {
+          "name": "SIDEBOARD_BODY",
+          "children": []
+        },
+        {
+          "name": "SIDEBOARD_DOOR_01",
+          "children": []
+        },
+        {
+          "name": "SIDEBOARD_DOOR_02",
+          "children": []
+        },
+        {
+          "name": "SIDEBOARD_COFFEE",
+          "children": []
+        },
+        {
+          "name": "WORKSTATION_01",
+          "children": [
+            "CHAIR_01",
+            "MONITOR_01",
+            "KEYBOARD_MOUSE_01",
+            "FOLDER_01"
+          ]
+        },
+        {
+          "name": "CHAIR_01",
+          "children": [
+            "ANCHOR_SIT_01"
+          ]
+        },
+        {
+          "name": "ANCHOR_SIT_01",
+          "children": []
+        },
+        {
+          "name": "MONITOR_01",
+          "children": []
+        },
+        {
+          "name": "KEYBOARD_MOUSE_01",
+          "children": []
+        },
+        {
+          "name": "FOLDER_01",
+          "children": []
+        },
+        {
+          "name": "WORKSTATION_07",
+          "children": [
+            "CHAIR_07",
+            "STATIONERY_07"
+          ]
+        },
+        {
+          "name": "CHAIR_07",
+          "children": [
+            "ANCHOR_SIT_07"
+          ]
+        },
+        {
+          "name": "ANCHOR_SIT_07",
+          "children": []
+        },
+        {
+          "name": "STATIONERY_07",
+          "children": []
+        },
+        {
+          "name": "WORKSTATION_02",
+          "children": [
+            "CHAIR_02",
+            "MONITOR_02",
+            "KEYBOARD_MOUSE_02",
+            "THERMOS_02"
+          ]
+        },
+        {
+          "name": "CHAIR_02",
+          "children": [
+            "ANCHOR_SIT_02"
+          ]
+        },
+        {
+          "name": "ANCHOR_SIT_02",
+          "children": []
+        },
+        {
+          "name": "MONITOR_02",
+          "children": []
+        },
+        {
+          "name": "KEYBOARD_MOUSE_02",
+          "children": []
+        },
+        {
+          "name": "THERMOS_02",
+          "children": []
+        },
+        {
+          "name": "WORKSTATION_03",
+          "children": [
+            "CHAIR_03",
+            "MONITOR_03",
+            "KEYBOARD_MOUSE_03",
+            "FOLDER_03"
+          ]
+        },
+        {
+          "name": "CHAIR_03",
+          "children": [
+            "ANCHOR_SIT_03"
+          ]
+        },
+        {
+          "name": "ANCHOR_SIT_03",
+          "children": []
+        },
+        {
+          "name": "MONITOR_03",
+          "children": []
+        },
+        {
+          "name": "KEYBOARD_MOUSE_03",
+          "children": []
+        },
+        {
+          "name": "FOLDER_03",
+          "children": []
+        },
+        {
+          "name": "WORKSTATION_04",
+          "children": [
+            "CHAIR_04",
+            "NOTEBOOK_04",
+            "FOLDER_04"
+          ]
+        },
+        {
+          "name": "CHAIR_04",
+          "children": [
+            "ANCHOR_SIT_04"
+          ]
+        },
+        {
+          "name": "ANCHOR_SIT_04",
+          "children": []
+        },
+        {
+          "name": "NOTEBOOK_04",
+          "children": []
+        },
+        {
+          "name": "FOLDER_04",
+          "children": []
+        },
+        {
+          "name": "WORKSTATION_08",
+          "children": [
+            "CHAIR_08",
+            "STATIONERY_08"
+          ]
+        },
+        {
+          "name": "CHAIR_08",
+          "children": [
+            "ANCHOR_SIT_08"
+          ]
+        },
+        {
+          "name": "ANCHOR_SIT_08",
+          "children": []
+        },
+        {
+          "name": "STATIONERY_08",
+          "children": []
+        },
+        {
+          "name": "WORKSTATION_05",
+          "children": [
+            "CHAIR_05",
+            "NOTEBOOK_05",
+            "THERMOS_05"
+          ]
+        },
+        {
+          "name": "CHAIR_05",
+          "children": [
+            "ANCHOR_SIT_05"
+          ]
+        },
+        {
+          "name": "ANCHOR_SIT_05",
+          "children": []
+        },
+        {
+          "name": "NOTEBOOK_05",
+          "children": []
+        },
+        {
+          "name": "THERMOS_05",
+          "children": []
+        },
+        {
+          "name": "WORKSTATION_06",
+          "children": [
+            "CHAIR_06",
+            "NOTEBOOK_06",
+            "FOLDER_06"
+          ]
+        },
+        {
+          "name": "CHAIR_06",
+          "children": [
+            "ANCHOR_SIT_06"
+          ]
+        },
+        {
+          "name": "ANCHOR_SIT_06",
+          "children": []
+        },
+        {
+          "name": "NOTEBOOK_06",
+          "children": []
+        },
+        {
+          "name": "FOLDER_06",
+          "children": []
+        }
+      ],
+      "materials": [
+        "MAT_WHITE_LAMINATE",
+        "MAT_WHITE_PANEL",
+        "MAT_PANEL_GLIDE",
+        "MAT_CABLE_CAP",
+        "MAT_CABLE_SLOT",
+        "MAT_CABINET_WOOD",
+        "MAT_DARK_FRAME",
+        "MAT_PLATED_STEEL",
+        "MAT_CASTER",
+        "MAT_THERMOS_STEEL",
+        "MAT_PAPER",
+        "MAT_NOTEBOOK_ALLOY",
+        "MAT_NOTEBOOK_LCD",
+        "MAT_KEYCAPS",
+        "MAT_CHAIR_FABRIC",
+        "MAT_CHAIR_MESH",
+        "MAT_MONITOR_DISPLAY",
+        "MAT_BINDER_GREEN",
+        "MAT_BINDER_BLUE",
+        "MAT_STATIONERY"
+      ],
+      "textures": [
+        "weave.png",
+        "desktop.png",
+        "wood.png"
+      ],
+      "anchors": [
+        "ANCHOR_DESK_TOP",
+        "ANCHOR_SIT_01",
+        "ANCHOR_SIT_07",
+        "ANCHOR_SIT_02",
+        "ANCHOR_SIT_03",
+        "ANCHOR_SIT_04",
+        "ANCHOR_SIT_08",
+        "ANCHOR_SIT_05",
+        "ANCHOR_SIT_06"
+      ],
+      "anchor_details": [
+        {
+          "name": "ANCHOR_DESK_TOP",
+          "translation_m": [
+            0,
+            0.75,
+            0
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del tablero a su altura nominal, sobre la unión longitudinal."
+        },
+        {
+          "name": "ANCHOR_SIT_01",
+          "parent": "CHAIR_01",
+          "translation_m": [
+            0,
+            0.485,
+            0.022
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del asiento de este puesto."
+        },
+        {
+          "name": "ANCHOR_SIT_07",
+          "parent": "CHAIR_07",
+          "translation_m": [
+            0,
+            0.485,
+            0.022
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del asiento de este puesto."
+        },
+        {
+          "name": "ANCHOR_SIT_02",
+          "parent": "CHAIR_02",
+          "translation_m": [
+            0,
+            0.485,
+            0.022
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del asiento de este puesto."
+        },
+        {
+          "name": "ANCHOR_SIT_03",
+          "parent": "CHAIR_03",
+          "translation_m": [
+            0,
+            0.485,
+            0.022
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del asiento de este puesto."
+        },
+        {
+          "name": "ANCHOR_SIT_04",
+          "parent": "CHAIR_04",
+          "translation_m": [
+            0,
+            0.485,
+            0.022
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del asiento de este puesto."
+        },
+        {
+          "name": "ANCHOR_SIT_08",
+          "parent": "CHAIR_08",
+          "translation_m": [
+            0,
+            0.485,
+            0.022
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del asiento de este puesto."
+        },
+        {
+          "name": "ANCHOR_SIT_05",
+          "parent": "CHAIR_05",
+          "translation_m": [
+            0,
+            0.485,
+            0.022
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del asiento de este puesto."
+        },
+        {
+          "name": "ANCHOR_SIT_06",
+          "parent": "CHAIR_06",
+          "translation_m": [
+            0,
+            0.485,
+            0.022
+          ],
+          "forward": "+Z",
+          "purpose": "Centro del asiento de este puesto."
+        }
+      ],
+      "animations": [],
+      "animation_details": [],
+      "pending_animations": [],
+      "references": [
+        "reference.office_photo.001",
+        "reference.office_photo.002",
+        "reference.office_photo.003",
+        "reference.desk_measurement.001",
+        "reference.layout_markup.001",
+        "reference.sideboard.001"
+      ],
+      "measurement_status": "confirmed_desk_only",
+      "limitations": [
+        "Ubicaciones y modelos de los accesorios interpretados de las fotos",
+        "Composición visual de ocho sillas y tres monitores delanteros y tres notebooks enfrente",
+        "La Cuenta B define la colisión y la circulación"
+      ]
+    }
+  ]
+}

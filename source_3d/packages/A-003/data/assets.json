@@ -1,0 +1,46 @@
+{
+  "package_id": "A-003",
+  "package_version": "0.1.0",
+  "delivery_mode": "delta",
+  "contract_version": "1.0",
+  "assets": [
+    {
+      "id": "env.floor.001",
+      "file": "assets/environment/floor_001.glb",
+      "type": "env",
+      "version": "0.1.0",
+      "root": "ROOT",
+      "dimensions_m": [
+        8,
+        0,
+        6
+      ],
+      "triangles": 2,
+      "materials": [
+        "MAT_FLOOR_GREIGE_PLANK"
+      ],
+      "textures": [
+        "greige_planks (JPEG embebido)"
+      ],
+      "animations": [],
+      "anchors": [],
+      "hierarchy": [
+        "ROOT/FLOOR_SURFACE"
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "status": "ready_for_review",
+      "measurement_status": "provisional",
+      "sha256": "dde868d646a83039c6bf6f9d8a1292b09fd3b9cab2b26a18a879bdfcd40ac554",
+      "file_size_bytes": 212340
+    }
+  ]
+}
