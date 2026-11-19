@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import React, { Suspense, useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Canvas } from '@react-three/fiber';
