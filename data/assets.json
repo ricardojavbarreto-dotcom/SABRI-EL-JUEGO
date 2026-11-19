@@ -1,0 +1,470 @@
+{
+  "schema_version": "1.0.0",
+  "schema_status": "proposal_for_a001",
+  "contract_version": "1.0",
+  "package_id": "A-001",
+  "package_version": "0.1.0",
+  "coordinates": {
+    "dimension_order": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "unit": "m",
+    "up": "+Y",
+    "character_front": "+Z",
+    "handedness": "right"
+  },
+  "files": {
+    "generator": "source_3d/scripts/generate_a001.mjs",
+    "blender": "source_3d/scripts/create_blends.py",
+    "verifier": "source_3d/scripts/verify_a001.mjs",
+    "manifest": "data/assets.json",
+    "references": "data/references.json",
+    "schema": "data/schemas/assets-a001.proposal.schema.json",
+    "report": "docs/REPORTE_INTEGRACION_CUENTA_A.md"
+  },
+  "assets": [
+    {
+      "id": "furniture.desk.001",
+      "type": "furniture",
+      "version": "0.1.0",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/furniture/desk_001.glb",
+      "file_size_bytes": 42376,
+      "sha256": "be34f1f86d9b079efeeee8f9b9c5f843d59ef9d22c51326deb05a0f79c8f398c",
+      "source": {
+        "generator": "source_3d/scripts/generate_a001.mjs",
+        "blender_script": "source_3d/scripts/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        1.4,
+        0.75,
+        0.7
+      ],
+      "bounds_m": {
+        "min": [
+          -0.7,
+          0,
+          -0.35
+        ],
+        "max": [
+          0.7,
+          0.75,
+          0.35
+        ]
+      },
+      "triangles": 780,
+      "materials": [
+        "MAT_OAK",
+        "MAT_GRAPHITE",
+        "MAT_RUBBER"
+      ],
+      "textures": [],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "VISUAL",
+            "ANCHOR_DESK_TOP"
+          ]
+        },
+        {
+          "name": "VISUAL",
+          "children": [
+            "DESK_TOP",
+            "DESK_FRAME"
+          ]
+        },
+        {
+          "name": "DESK_TOP",
+          "children": []
+        },
+        {
+          "name": "DESK_FRAME",
+          "children": []
+        },
+        {
+          "name": "ANCHOR_DESK_TOP",
+          "children": []
+        }
+      ],
+      "anchors": [
+        "ANCHOR_DESK_TOP"
+      ],
+      "anchor_details": [
+        {
+          "name": "ANCHOR_DESK_TOP",
+          "translation_m": [
+            0,
+            0.75,
+            0
+          ],
+          "forward": "+Z",
+          "purpose": "Centro de la superficie de apoyo"
+        }
+      ],
+      "animations": [],
+      "animation_details": [],
+      "pending_animations": [],
+      "references": [
+        "reference.prototype_desk.001"
+      ],
+      "limitations": [
+        "Mobiliario genérico de prueba",
+        "Colisiones a cargo de Cuenta B"
+      ]
+    },
+    {
+      "id": "furniture.chair.001",
+      "type": "furniture",
+      "version": "0.1.0",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/furniture/chair_001.glb",
+      "file_size_bytes": 37576,
+      "sha256": "4a91fdb5e7e114e9f970018eaed833c657f73632153eabd1ee0c051398412d93",
+      "source": {
+        "generator": "source_3d/scripts/generate_a001.mjs",
+        "blender_script": "source_3d/scripts/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.48,
+        0.87,
+        0.514
+      ],
+      "bounds_m": {
+        "min": [
+          -0.24,
+          0,
+          -0.254
+        ],
+        "max": [
+          0.24,
+          0.87,
+          0.26
+        ]
+      },
+      "triangles": 660,
+      "materials": [
+        "MAT_GRAPHITE",
+        "MAT_UPHOLSTERY",
+        "MAT_RUBBER"
+      ],
+      "textures": [],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "VISUAL",
+            "ANCHOR_SIT"
+          ]
+        },
+        {
+          "name": "VISUAL",
+          "children": [
+            "CHAIR_SEAT",
+            "CHAIR_BACK",
+            "CHAIR_FRAME"
+          ]
+        },
+        {
+          "name": "CHAIR_SEAT",
+          "children": []
+        },
+        {
+          "name": "CHAIR_BACK",
+          "children": []
+        },
+        {
+          "name": "CHAIR_FRAME",
+          "children": []
+        },
+        {
+          "name": "ANCHOR_SIT",
+          "children": []
+        }
+      ],
+      "anchors": [
+        "ANCHOR_SIT"
+      ],
+      "anchor_details": [
+        {
+          "name": "ANCHOR_SIT",
+          "translation_m": [
+            0,
+            0.46,
+            0.035
+          ],
+          "forward": "+Z",
+          "purpose": "Centro de la superficie del asiento"
+        }
+      ],
+      "animations": [],
+      "animation_details": [],
+      "pending_animations": [],
+      "references": [
+        "reference.prototype_chair.001"
+      ],
+      "limitations": [
+        "Mobiliario genérico de prueba",
+        "Colisiones a cargo de Cuenta B"
+      ]
+    },
+    {
+      "id": "char.employee.001",
+      "type": "char",
+      "version": "0.1.0",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/characters/employee_001.glb",
+      "file_size_bytes": 156076,
+      "sha256": "0b65233a7f18c24d8106fd9cdb0f4710c977c7c24c4ba7f1c16ce5abfef5b5c1",
+      "source": {
+        "generator": "source_3d/scripts/generate_a001.mjs",
+        "blender_script": "source_3d/scripts/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.632,
+        1.7,
+        0.288
+      ],
+      "bounds_m": {
+        "min": [
+          -0.316,
+          0,
+          -0.119
+        ],
+        "max": [
+          0.316,
+          1.7,
+          0.169
+        ]
+      },
+      "triangles": 1452,
+      "materials": [
+        "MAT_TROUSERS",
+        "MAT_SHIRT",
+        "MAT_COTTON",
+        "MAT_SKIN",
+        "MAT_HAIR",
+        "MAT_EYE",
+        "MAT_RUBBER",
+        "MAT_SHOE"
+      ],
+      "textures": [],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "+Z",
+      "rig": "RIG_EMPLOYEE_001",
+      "joints": [
+        "hips",
+        "spine",
+        "head",
+        "upper_arm_l",
+        "forearm_l",
+        "hand_l",
+        "thigh_l",
+        "shin_l",
+        "foot_l",
+        "upper_arm_r",
+        "forearm_r",
+        "hand_r",
+        "thigh_r",
+        "shin_r",
+        "foot_r"
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "ARMATURE",
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "ARMATURE",
+          "children": [
+            "hips"
+          ]
+        },
+        {
+          "name": "hips",
+          "children": [
+            "spine",
+            "thigh_l",
+            "thigh_r"
+          ]
+        },
+        {
+          "name": "spine",
+          "children": [
+            "head",
+            "upper_arm_l",
+            "upper_arm_r"
+          ]
+        },
+        {
+          "name": "head",
+          "children": []
+        },
+        {
+          "name": "upper_arm_l",
+          "children": [
+            "forearm_l"
+          ]
+        },
+        {
+          "name": "forearm_l",
+          "children": [
+            "hand_l"
+          ]
+        },
+        {
+          "name": "hand_l",
+          "children": []
+        },
+        {
+          "name": "thigh_l",
+          "children": [
+            "shin_l"
+          ]
+        },
+        {
+          "name": "shin_l",
+          "children": [
+            "foot_l"
+          ]
+        },
+        {
+          "name": "foot_l",
+          "children": []
+        },
+        {
+          "name": "upper_arm_r",
+          "children": [
+            "forearm_r"
+          ]
+        },
+        {
+          "name": "forearm_r",
+          "children": [
+            "hand_r"
+          ]
+        },
+        {
+          "name": "hand_r",
+          "children": []
+        },
+        {
+          "name": "thigh_r",
+          "children": [
+            "shin_r"
+          ]
+        },
+        {
+          "name": "shin_r",
+          "children": [
+            "foot_r"
+          ]
+        },
+        {
+          "name": "foot_r",
+          "children": []
+        },
+        {
+          "name": "VISUAL",
+          "children": []
+        }
+      ],
+      "anchors": [],
+      "anchor_details": [],
+      "animations": [
+        "Idle",
+        "Walk"
+      ],
+      "animation_details": [
+        {
+          "name": "Idle",
+          "duration_s": 3.2,
+          "loop": true,
+          "in_place": true,
+          "channels": 6
+        },
+        {
+          "name": "Walk",
+          "duration_s": 1.12,
+          "loop": true,
+          "in_place": true,
+          "channels": 13
+        }
+      ],
+      "pending_animations": [
+        "Sit",
+        "Talk",
+        "Interact",
+        "React"
+      ],
+      "references": [
+        "reference.prototype_employee.001"
+      ],
+      "limitations": [
+        "Rig segmentado de peso rígido, sin retargeting probado",
+        "Posición de reposo usada para las dimensiones"
+      ]
+    }
+  ]
+}
