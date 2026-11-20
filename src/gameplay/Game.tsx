@@ -111,7 +111,8 @@ const options = [
  { text: 'Pedirle que espere un momento', reaction: 'El visitante acepta esperar. Encuentro resuelto.', points: 1 },
  { text: 'Decirle que vuelva mañana', reaction: 'El visitante se retira molesto. Encuentro resuelto.', points: 0 }
 ];
-// Expanded playable limits: four additional metres in every direction.\nconst colleagues: { id: string; name: string; position: [number, number, number]; rotation: number }[] = [
+// Expanded playable limits: four additional metres in every direction.
+const colleagues: { id: string; name: string; position: [number, number, number]; rotation: number }[] = [
  { id: 'char.ricardo_uruguayo.001', name: 'Ricardo Uruguayo', position: [-1.75, 0, -1.75], rotation: 0 },
  { id: 'char.david.001', name: 'David', position: [-0.5, 0, 1.85], rotation: Math.PI },
  { id: 'char.nicolas.001', name: 'Nicolás', position: [0.8, 0, -1.75], rotation: 0 },
@@ -120,7 +121,8 @@ const options = [
 ];
 function Office({ phase, onInteract, onVisitor }: { phase: Phase; onInteract: (name: string) => void; onVisitor: () => void }) {
  return <group>
-  <ExtendedFloor/>\n  <Player/>
+  <ExtendedFloor/>
+  <Player/>
   <Model id="env.desk_cluster.001" onClick={() => onInteract('Puestos de trabajo')}/>
   {colleagues.map(person => <group key={person.id}>
    <Model id={person.id} position={person.position} rotation={person.rotation} animate onClick={() => onInteract(person.name)}/>
