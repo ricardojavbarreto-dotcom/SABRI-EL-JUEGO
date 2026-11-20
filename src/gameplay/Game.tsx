@@ -71,8 +71,8 @@ function Player() {
   const dx = (right - forward) / Math.SQRT2 / length;
   const dz = (-right - forward) / Math.SQRT2 / length;
   const speed = Math.min(delta, .05) * 2.2;
-  const x = THREE.MathUtils.clamp(group.position.x + dx * speed, -3.75, 3.75);
-  const z = THREE.MathUtils.clamp(group.position.z + dz * speed, -2.75, 2.75);
+  const x = THREE.MathUtils.clamp(group.position.x + dx * speed, -7.75, 7.75);
+  const z = THREE.MathUtils.clamp(group.position.z + dz * speed, -6.75, 6.75);
   // Keep Sabri outside the desk cluster until mesh colliders are available.
   if (!(Math.abs(x) < 2.75 && Math.abs(z) < 1.42)) group.position.set(x, 0, z);
   const angle = Math.atan2(dx, dz);
@@ -111,7 +111,7 @@ const options = [
  { text: 'Pedirle que espere un momento', reaction: 'El visitante acepta esperar. Encuentro resuelto.', points: 1 },
  { text: 'Decirle que vuelva mañana', reaction: 'El visitante se retira molesto. Encuentro resuelto.', points: 0 }
 ];
-const colleagues: { id: string; name: string; position: [number, number, number]; rotation: number }[] = [
+// Expanded playable limits: four additional metres in every direction.\nconst colleagues: { id: string; name: string; position: [number, number, number]; rotation: number }[] = [
  { id: 'char.ricardo_uruguayo.001', name: 'Ricardo Uruguayo', position: [-1.75, 0, -1.75], rotation: 0 },
  { id: 'char.david.001', name: 'David', position: [-0.5, 0, 1.85], rotation: Math.PI },
  { id: 'char.nicolas.001', name: 'Nicolás', position: [0.8, 0, -1.75], rotation: 0 },
