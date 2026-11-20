@@ -1,0 +1,12 @@
+{
+  "references": [
+    {
+      "reference_id": "reference.sabri.photos.001",
+      "title": "Dos fotografías de Sabri aportadas por Gasti",
+      "description": "La primera define la camisa estampada, los anteojos de sol y el pelo largo. La segunda aporta la forma del rostro. Altura aproximada indicada por Gasti, 1,68 m.",
+      "applies_to": [
+        "char.sabri.001"
+      ]
+    }
+  ]
+}

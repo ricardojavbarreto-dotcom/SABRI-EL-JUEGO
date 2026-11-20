@@ -1017,11 +1017,1564 @@
         "blender_script": "source_3d/packages/A-003/source_3d/scripts/create_blends.py",
         "blend_file": null
       }
+    },
+    {
+      "id": "char.sabri.001",
+      "type": "char",
+      "version": "0.2.2",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/characters/sabri_001.glb",
+      "file_size_bytes": 2133316,
+      "sha256": "974db865297fa004d5e5f09b36aa180e83c91000ebd943dacbab676c668298f5",
+      "source": {
+        "generator": "source_3d/packages/A-004/generate_a004.mjs",
+        "blender_script": "source_3d/packages/A-004/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.532,
+        1.68,
+        0.290139
+      ],
+      "bounds_m": {
+        "min": [
+          -0.266,
+          0,
+          -0.121139
+        ],
+        "max": [
+          0.266,
+          1.68,
+          0.169
+        ]
+      },
+      "triangles": 19348,
+      "materials": [
+        "MAT_TROUSERS",
+        "MAT_SHIRT",
+        "MAT_BUTTON",
+        "MAT_SKIN",
+        "MAT_FACE",
+        "MAT_HAIR",
+        "MAT_CHESTNUT",
+        "MAT_EARRINGS",
+        "MAT_RUBBER",
+        "MAT_SHOE"
+      ],
+      "textures": [
+        "camisa.jpg",
+        "rostro.jpg",
+        "pelo.jpg"
+      ],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "+Z",
+      "rig": "RIG_EMPLOYEE_001",
+      "joints": [
+        "hips",
+        "spine",
+        "head",
+        "upper_arm_l",
+        "forearm_l",
+        "hand_l",
+        "thigh_l",
+        "shin_l",
+        "foot_l",
+        "upper_arm_r",
+        "forearm_r",
+        "hand_r",
+        "thigh_r",
+        "shin_r",
+        "foot_r"
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "ARMATURE",
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "ARMATURE",
+          "children": [
+            "hips"
+          ]
+        },
+        {
+          "name": "hips",
+          "children": [
+            "spine",
+            "thigh_l",
+            "thigh_r"
+          ]
+        },
+        {
+          "name": "spine",
+          "children": [
+            "head",
+            "upper_arm_l",
+            "upper_arm_r"
+          ]
+        },
+        {
+          "name": "head",
+          "children": []
+        },
+        {
+          "name": "upper_arm_l",
+          "children": [
+            "forearm_l"
+          ]
+        },
+        {
+          "name": "forearm_l",
+          "children": [
+            "hand_l"
+          ]
+        },
+        {
+          "name": "hand_l",
+          "children": []
+        },
+        {
+          "name": "thigh_l",
+          "children": [
+            "shin_l"
+          ]
+        },
+        {
+          "name": "shin_l",
+          "children": [
+            "foot_l"
+          ]
+        },
+        {
+          "name": "foot_l",
+          "children": []
+        },
+        {
+          "name": "upper_arm_r",
+          "children": [
+            "forearm_r"
+          ]
+        },
+        {
+          "name": "forearm_r",
+          "children": [
+            "hand_r"
+          ]
+        },
+        {
+          "name": "hand_r",
+          "children": []
+        },
+        {
+          "name": "thigh_r",
+          "children": [
+            "shin_r"
+          ]
+        },
+        {
+          "name": "shin_r",
+          "children": [
+            "foot_r"
+          ]
+        },
+        {
+          "name": "foot_r",
+          "children": []
+        },
+        {
+          "name": "VISUAL",
+          "children": []
+        }
+      ],
+      "anchors": [],
+      "anchor_details": [],
+      "animations": [
+        "Idle",
+        "Walk"
+      ],
+      "animation_details": [
+        {
+          "name": "Idle",
+          "duration_s": 3.2,
+          "loop": true,
+          "in_place": true,
+          "channels": 6
+        },
+        {
+          "name": "Walk",
+          "duration_s": 1.12,
+          "loop": true,
+          "in_place": true,
+          "channels": 13
+        }
+      ],
+      "pending_animations": [
+        "Sit",
+        "Talk",
+        "Interact",
+        "React"
+      ],
+      "references": [
+        "reference.sabri.photos.001"
+      ],
+      "limitations": [
+        "Rig segmentado de peso rígido, sin retargeting probado",
+        "Posición de reposo usada para las dimensiones"
+      ]
+    },
+    {
+      "id": "char.ricardo_uruguayo.001",
+      "type": "char",
+      "version": "0.1.1",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/characters/ricardo_uruguayo_001.glb",
+      "file_size_bytes": 1210132,
+      "sha256": "d7622c2d81aa12dbc72910488a1c33b4a3a0d0f37ad3b45a715dcbcadc5866a2",
+      "source": {
+        "generator": "source_3d/packages/A-005-base/generate_a005.mjs",
+        "blender_script": "source_3d/packages/A-005-base/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.57256,
+        1.698635,
+        0.296
+      ],
+      "bounds_m": {
+        "min": [
+          -0.28628,
+          0,
+          -0.127
+        ],
+        "max": [
+          0.28628,
+          1.698635,
+          0.169
+        ]
+      },
+      "triangles": 11192,
+      "materials": [
+        "MAT_TROUSERS",
+        "MAT_SHIRT",
+        "MAT_JACKET_YOKE",
+        "MAT_SKIN",
+        "MAT_GRAPHITE",
+        "MAT_FACE",
+        "MAT_HAIR",
+        "MAT_RUBBER",
+        "MAT_SHOE"
+      ],
+      "textures": [
+        "ricardo_uruguayo_hair.jpg",
+        "ricardo_uruguayo_cloth.jpg",
+        "ricardo_uruguayo_face.jpg"
+      ],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "+Z",
+      "rig": "RIG_EMPLOYEE_001",
+      "joints": [
+        "hips",
+        "spine",
+        "head",
+        "upper_arm_l",
+        "forearm_l",
+        "hand_l",
+        "thigh_l",
+        "shin_l",
+        "foot_l",
+        "upper_arm_r",
+        "forearm_r",
+        "hand_r",
+        "thigh_r",
+        "shin_r",
+        "foot_r"
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "ARMATURE",
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "ARMATURE",
+          "children": [
+            "hips"
+          ]
+        },
+        {
+          "name": "hips",
+          "children": [
+            "spine",
+            "thigh_l",
+            "thigh_r"
+          ]
+        },
+        {
+          "name": "spine",
+          "children": [
+            "head",
+            "upper_arm_l",
+            "upper_arm_r"
+          ]
+        },
+        {
+          "name": "head",
+          "children": []
+        },
+        {
+          "name": "upper_arm_l",
+          "children": [
+            "forearm_l"
+          ]
+        },
+        {
+          "name": "forearm_l",
+          "children": [
+            "hand_l"
+          ]
+        },
+        {
+          "name": "hand_l",
+          "children": []
+        },
+        {
+          "name": "thigh_l",
+          "children": [
+            "shin_l"
+          ]
+        },
+        {
+          "name": "shin_l",
+          "children": [
+            "foot_l"
+          ]
+        },
+        {
+          "name": "foot_l",
+          "children": []
+        },
+        {
+          "name": "upper_arm_r",
+          "children": [
+            "forearm_r"
+          ]
+        },
+        {
+          "name": "forearm_r",
+          "children": [
+            "hand_r"
+          ]
+        },
+        {
+          "name": "hand_r",
+          "children": []
+        },
+        {
+          "name": "thigh_r",
+          "children": [
+            "shin_r"
+          ]
+        },
+        {
+          "name": "shin_r",
+          "children": [
+            "foot_r"
+          ]
+        },
+        {
+          "name": "foot_r",
+          "children": []
+        },
+        {
+          "name": "VISUAL",
+          "children": []
+        }
+      ],
+      "anchors": [],
+      "anchor_details": [],
+      "animations": [
+        "Idle",
+        "Walk"
+      ],
+      "animation_details": [
+        {
+          "name": "Idle",
+          "duration_s": 3.2,
+          "loop": true,
+          "in_place": true,
+          "channels": 6
+        },
+        {
+          "name": "Walk",
+          "duration_s": 1.12,
+          "loop": true,
+          "in_place": true,
+          "channels": 13
+        }
+      ],
+      "pending_animations": [
+        "Sit",
+        "Talk",
+        "Interact",
+        "React"
+      ],
+      "references": [
+        "ricardo_uruguayo"
+      ],
+      "limitations": [
+        "Rig segmentado de peso rígido, sin retargeting probado",
+        "Posición de reposo usada para las dimensiones"
+      ]
+    },
+    {
+      "id": "char.gaston.001",
+      "type": "char",
+      "version": "0.1.0",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/characters/gaston_001.glb",
+      "file_size_bytes": 1249620,
+      "sha256": "7b526f0f667e039ec54a1727ad5188c985b710d3d4c96fd6e5cef56c17d5a1da",
+      "source": {
+        "generator": "source_3d/packages/A-005-base/generate_a005.mjs",
+        "blender_script": "source_3d/packages/A-005-base/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.5658,
+        1.689635,
+        0.291588
+      ],
+      "bounds_m": {
+        "min": [
+          -0.2829,
+          0,
+          -0.122588
+        ],
+        "max": [
+          0.2829,
+          1.689635,
+          0.169
+        ]
+      },
+      "triangles": 11772,
+      "materials": [
+        "MAT_TROUSERS",
+        "MAT_SHIRT",
+        "MAT_SKIN",
+        "MAT_FACE",
+        "MAT_HAIR",
+        "MAT_SHOE",
+        "MAT_GRAPHITE",
+        "MAT_RUBBER"
+      ],
+      "textures": [
+        "gaston_hair.jpg",
+        "gaston_cloth.jpg",
+        "gaston_face.jpg"
+      ],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "+Z",
+      "rig": "RIG_EMPLOYEE_001",
+      "joints": [
+        "hips",
+        "spine",
+        "head",
+        "upper_arm_l",
+        "forearm_l",
+        "hand_l",
+        "thigh_l",
+        "shin_l",
+        "foot_l",
+        "upper_arm_r",
+        "forearm_r",
+        "hand_r",
+        "thigh_r",
+        "shin_r",
+        "foot_r"
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "ARMATURE",
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "ARMATURE",
+          "children": [
+            "hips"
+          ]
+        },
+        {
+          "name": "hips",
+          "children": [
+            "spine",
+            "thigh_l",
+            "thigh_r"
+          ]
+        },
+        {
+          "name": "spine",
+          "children": [
+            "head",
+            "upper_arm_l",
+            "upper_arm_r"
+          ]
+        },
+        {
+          "name": "head",
+          "children": []
+        },
+        {
+          "name": "upper_arm_l",
+          "children": [
+            "forearm_l"
+          ]
+        },
+        {
+          "name": "forearm_l",
+          "children": [
+            "hand_l"
+          ]
+        },
+        {
+          "name": "hand_l",
+          "children": []
+        },
+        {
+          "name": "thigh_l",
+          "children": [
+            "shin_l"
+          ]
+        },
+        {
+          "name": "shin_l",
+          "children": [
+            "foot_l"
+          ]
+        },
+        {
+          "name": "foot_l",
+          "children": []
+        },
+        {
+          "name": "upper_arm_r",
+          "children": [
+            "forearm_r"
+          ]
+        },
+        {
+          "name": "forearm_r",
+          "children": [
+            "hand_r"
+          ]
+        },
+        {
+          "name": "hand_r",
+          "children": []
+        },
+        {
+          "name": "thigh_r",
+          "children": [
+            "shin_r"
+          ]
+        },
+        {
+          "name": "shin_r",
+          "children": [
+            "foot_r"
+          ]
+        },
+        {
+          "name": "foot_r",
+          "children": []
+        },
+        {
+          "name": "VISUAL",
+          "children": []
+        }
+      ],
+      "anchors": [],
+      "anchor_details": [],
+      "animations": [
+        "Idle",
+        "Walk"
+      ],
+      "animation_details": [
+        {
+          "name": "Idle",
+          "duration_s": 3.2,
+          "loop": true,
+          "in_place": true,
+          "channels": 6
+        },
+        {
+          "name": "Walk",
+          "duration_s": 1.12,
+          "loop": true,
+          "in_place": true,
+          "channels": 13
+        }
+      ],
+      "pending_animations": [
+        "Sit",
+        "Talk",
+        "Interact",
+        "React"
+      ],
+      "references": [
+        "gaston"
+      ],
+      "limitations": [
+        "Rig segmentado de peso rígido, sin retargeting probado",
+        "Posición de reposo usada para las dimensiones"
+      ]
+    },
+    {
+      "id": "char.david.001",
+      "type": "char",
+      "version": "0.1.1",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/characters/david_001.glb",
+      "file_size_bytes": 1267240,
+      "sha256": "d7b6dc9f41b1419eaf1d58e0a0c8a92c9a1bd1f883e297430640e16e857afd42",
+      "source": {
+        "generator": "source_3d/packages/A-005-base/generate_a005.mjs",
+        "blender_script": "source_3d/packages/A-005-base/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.54552,
+        1.682635,
+        0.291588
+      ],
+      "bounds_m": {
+        "min": [
+          -0.27276,
+          0,
+          -0.122588
+        ],
+        "max": [
+          0.27276,
+          1.682635,
+          0.169
+        ]
+      },
+      "triangles": 11892,
+      "materials": [
+        "MAT_TROUSERS",
+        "MAT_SHIRT",
+        "MAT_SKIN",
+        "MAT_FACE",
+        "MAT_HAIR",
+        "MAT_SHOE",
+        "MAT_GRAPHITE",
+        "MAT_RUBBER"
+      ],
+      "textures": [
+        "david_hair.jpg",
+        "david_cloth.jpg",
+        "david_face.jpg"
+      ],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "+Z",
+      "rig": "RIG_EMPLOYEE_001",
+      "joints": [
+        "hips",
+        "spine",
+        "head",
+        "upper_arm_l",
+        "forearm_l",
+        "hand_l",
+        "thigh_l",
+        "shin_l",
+        "foot_l",
+        "upper_arm_r",
+        "forearm_r",
+        "hand_r",
+        "thigh_r",
+        "shin_r",
+        "foot_r"
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "ARMATURE",
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "ARMATURE",
+          "children": [
+            "hips"
+          ]
+        },
+        {
+          "name": "hips",
+          "children": [
+            "spine",
+            "thigh_l",
+            "thigh_r"
+          ]
+        },
+        {
+          "name": "spine",
+          "children": [
+            "head",
+            "upper_arm_l",
+            "upper_arm_r"
+          ]
+        },
+        {
+          "name": "head",
+          "children": []
+        },
+        {
+          "name": "upper_arm_l",
+          "children": [
+            "forearm_l"
+          ]
+        },
+        {
+          "name": "forearm_l",
+          "children": [
+            "hand_l"
+          ]
+        },
+        {
+          "name": "hand_l",
+          "children": []
+        },
+        {
+          "name": "thigh_l",
+          "children": [
+            "shin_l"
+          ]
+        },
+        {
+          "name": "shin_l",
+          "children": [
+            "foot_l"
+          ]
+        },
+        {
+          "name": "foot_l",
+          "children": []
+        },
+        {
+          "name": "upper_arm_r",
+          "children": [
+            "forearm_r"
+          ]
+        },
+        {
+          "name": "forearm_r",
+          "children": [
+            "hand_r"
+          ]
+        },
+        {
+          "name": "hand_r",
+          "children": []
+        },
+        {
+          "name": "thigh_r",
+          "children": [
+            "shin_r"
+          ]
+        },
+        {
+          "name": "shin_r",
+          "children": [
+            "foot_r"
+          ]
+        },
+        {
+          "name": "foot_r",
+          "children": []
+        },
+        {
+          "name": "VISUAL",
+          "children": []
+        }
+      ],
+      "anchors": [],
+      "anchor_details": [],
+      "animations": [
+        "Idle",
+        "Walk"
+      ],
+      "animation_details": [
+        {
+          "name": "Idle",
+          "duration_s": 3.2,
+          "loop": true,
+          "in_place": true,
+          "channels": 6
+        },
+        {
+          "name": "Walk",
+          "duration_s": 1.12,
+          "loop": true,
+          "in_place": true,
+          "channels": 13
+        }
+      ],
+      "pending_animations": [
+        "Sit",
+        "Talk",
+        "Interact",
+        "React"
+      ],
+      "references": [
+        "david"
+      ],
+      "limitations": [
+        "Rig segmentado de peso rígido, sin retargeting probado",
+        "Posición de reposo usada para las dimensiones"
+      ]
+    },
+    {
+      "id": "char.nicolas.001",
+      "type": "char",
+      "version": "0.1.2",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/characters/nicolas_001.glb",
+      "file_size_bytes": 1502276,
+      "sha256": "b0f49e8c26a7252ef4dacc2cc575a149a8a4758fbecff33393d39ab723279906",
+      "source": {
+        "generator": "source_3d/packages/A-005/generate_a005.mjs",
+        "blender_script": "source_3d/packages/A-005/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.55566,
+        1.671,
+        0.291588
+      ],
+      "bounds_m": {
+        "min": [
+          -0.27783,
+          0,
+          -0.122588
+        ],
+        "max": [
+          0.27783,
+          1.671,
+          0.169
+        ]
+      },
+      "triangles": 13660,
+      "materials": [
+        "MAT_TROUSERS",
+        "MAT_SHIRT",
+        "MAT_SKIN",
+        "MAT_BUTTON",
+        "MAT_FACE",
+        "MAT_RUBBER",
+        "MAT_SHOE"
+      ],
+      "textures": [
+        "nicolas_cloth.jpg",
+        "nicolas_face.jpg"
+      ],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "+Z",
+      "rig": "RIG_EMPLOYEE_001",
+      "joints": [
+        "hips",
+        "spine",
+        "head",
+        "upper_arm_l",
+        "forearm_l",
+        "hand_l",
+        "thigh_l",
+        "shin_l",
+        "foot_l",
+        "upper_arm_r",
+        "forearm_r",
+        "hand_r",
+        "thigh_r",
+        "shin_r",
+        "foot_r"
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "ARMATURE",
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "ARMATURE",
+          "children": [
+            "hips"
+          ]
+        },
+        {
+          "name": "hips",
+          "children": [
+            "spine",
+            "thigh_l",
+            "thigh_r"
+          ]
+        },
+        {
+          "name": "spine",
+          "children": [
+            "head",
+            "upper_arm_l",
+            "upper_arm_r"
+          ]
+        },
+        {
+          "name": "head",
+          "children": []
+        },
+        {
+          "name": "upper_arm_l",
+          "children": [
+            "forearm_l"
+          ]
+        },
+        {
+          "name": "forearm_l",
+          "children": [
+            "hand_l"
+          ]
+        },
+        {
+          "name": "hand_l",
+          "children": []
+        },
+        {
+          "name": "thigh_l",
+          "children": [
+            "shin_l"
+          ]
+        },
+        {
+          "name": "shin_l",
+          "children": [
+            "foot_l"
+          ]
+        },
+        {
+          "name": "foot_l",
+          "children": []
+        },
+        {
+          "name": "upper_arm_r",
+          "children": [
+            "forearm_r"
+          ]
+        },
+        {
+          "name": "forearm_r",
+          "children": [
+            "hand_r"
+          ]
+        },
+        {
+          "name": "hand_r",
+          "children": []
+        },
+        {
+          "name": "thigh_r",
+          "children": [
+            "shin_r"
+          ]
+        },
+        {
+          "name": "shin_r",
+          "children": [
+            "foot_r"
+          ]
+        },
+        {
+          "name": "foot_r",
+          "children": []
+        },
+        {
+          "name": "VISUAL",
+          "children": []
+        }
+      ],
+      "anchors": [],
+      "anchor_details": [],
+      "animations": [
+        "Idle",
+        "Walk"
+      ],
+      "animation_details": [
+        {
+          "name": "Idle",
+          "duration_s": 3.2,
+          "loop": true,
+          "in_place": true,
+          "channels": 6
+        },
+        {
+          "name": "Walk",
+          "duration_s": 1.12,
+          "loop": true,
+          "in_place": true,
+          "channels": 13
+        }
+      ],
+      "pending_animations": [
+        "Sit",
+        "Talk",
+        "Interact",
+        "React"
+      ],
+      "references": [
+        "nicolas"
+      ],
+      "limitations": [
+        "Rig segmentado de peso rígido, sin retargeting probado",
+        "Posición de reposo usada para las dimensiones"
+      ]
+    },
+    {
+      "id": "char.padre_conrado.001",
+      "type": "char",
+      "version": "0.1.2",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/characters/padre_conrado_001.glb",
+      "file_size_bytes": 1530084,
+      "sha256": "13bea9a93c618d347bb8d76daefd45d83d9e2ebdec8d97735d470f82f368a11b",
+      "source": {
+        "generator": "source_3d/packages/A-005/generate_a005.mjs",
+        "blender_script": "source_3d/packages/A-005/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.54214,
+        1.671,
+        0.291588
+      ],
+      "bounds_m": {
+        "min": [
+          -0.27107,
+          0,
+          -0.122588
+        ],
+        "max": [
+          0.27107,
+          1.671,
+          0.169
+        ]
+      },
+      "triangles": 13264,
+      "materials": [
+        "MAT_TROUSERS",
+        "MAT_SHIRT",
+        "MAT_SKIN",
+        "MAT_BUTTON",
+        "MAT_FACE",
+        "MAT_RUBBER",
+        "MAT_SHOE"
+      ],
+      "textures": [
+        "padre_conrado_cloth.jpg",
+        "padre_conrado_face.jpg"
+      ],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "+Z",
+      "rig": "RIG_EMPLOYEE_001",
+      "joints": [
+        "hips",
+        "spine",
+        "head",
+        "upper_arm_l",
+        "forearm_l",
+        "hand_l",
+        "thigh_l",
+        "shin_l",
+        "foot_l",
+        "upper_arm_r",
+        "forearm_r",
+        "hand_r",
+        "thigh_r",
+        "shin_r",
+        "foot_r"
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "ARMATURE",
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "ARMATURE",
+          "children": [
+            "hips"
+          ]
+        },
+        {
+          "name": "hips",
+          "children": [
+            "spine",
+            "thigh_l",
+            "thigh_r"
+          ]
+        },
+        {
+          "name": "spine",
+          "children": [
+            "head",
+            "upper_arm_l",
+            "upper_arm_r"
+          ]
+        },
+        {
+          "name": "head",
+          "children": []
+        },
+        {
+          "name": "upper_arm_l",
+          "children": [
+            "forearm_l"
+          ]
+        },
+        {
+          "name": "forearm_l",
+          "children": [
+            "hand_l"
+          ]
+        },
+        {
+          "name": "hand_l",
+          "children": []
+        },
+        {
+          "name": "thigh_l",
+          "children": [
+            "shin_l"
+          ]
+        },
+        {
+          "name": "shin_l",
+          "children": [
+            "foot_l"
+          ]
+        },
+        {
+          "name": "foot_l",
+          "children": []
+        },
+        {
+          "name": "upper_arm_r",
+          "children": [
+            "forearm_r"
+          ]
+        },
+        {
+          "name": "forearm_r",
+          "children": [
+            "hand_r"
+          ]
+        },
+        {
+          "name": "hand_r",
+          "children": []
+        },
+        {
+          "name": "thigh_r",
+          "children": [
+            "shin_r"
+          ]
+        },
+        {
+          "name": "shin_r",
+          "children": [
+            "foot_r"
+          ]
+        },
+        {
+          "name": "foot_r",
+          "children": []
+        },
+        {
+          "name": "VISUAL",
+          "children": []
+        }
+      ],
+      "anchors": [],
+      "anchor_details": [],
+      "animations": [
+        "Idle",
+        "Walk"
+      ],
+      "animation_details": [
+        {
+          "name": "Idle",
+          "duration_s": 3.2,
+          "loop": true,
+          "in_place": true,
+          "channels": 6
+        },
+        {
+          "name": "Walk",
+          "duration_s": 1.12,
+          "loop": true,
+          "in_place": true,
+          "channels": 13
+        }
+      ],
+      "pending_animations": [
+        "Sit",
+        "Talk",
+        "Interact",
+        "React"
+      ],
+      "references": [
+        "padre_conrado"
+      ],
+      "limitations": [
+        "Rig segmentado de peso rígido, sin retargeting probado",
+        "Posición de reposo usada para las dimensiones"
+      ]
+    },
+    {
+      "id": "char.kelly.001",
+      "type": "char",
+      "version": "0.1.2",
+      "status": "ready_for_review",
+      "fidelity": "provisional",
+      "file": "assets/characters/kelly_001.glb",
+      "file_size_bytes": 1500296,
+      "sha256": "6b7e182b054e234582a2af9488aefcc728ab95fb1602df5f42fe93bff7d3a913",
+      "source": {
+        "generator": "source_3d/packages/A-005/generate_a005.mjs",
+        "blender_script": "source_3d/packages/A-005/create_blends.py",
+        "blend_file": null
+      },
+      "dimensions_m": [
+        0.51848,
+        1.671,
+        0.291588
+      ],
+      "bounds_m": {
+        "min": [
+          -0.25924,
+          0,
+          -0.122588
+        ],
+        "max": [
+          0.25924,
+          1.671,
+          0.169
+        ]
+      },
+      "triangles": 13660,
+      "materials": [
+        "MAT_TROUSERS",
+        "MAT_SHIRT",
+        "MAT_SKIN",
+        "MAT_BUTTON",
+        "MAT_FACE",
+        "MAT_RUBBER",
+        "MAT_SHOE"
+      ],
+      "textures": [
+        "kelly_cloth.jpg",
+        "kelly_face.jpg"
+      ],
+      "root": "ROOT",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "initial_rotation_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "+Z",
+      "rig": "RIG_EMPLOYEE_001",
+      "joints": [
+        "hips",
+        "spine",
+        "head",
+        "upper_arm_l",
+        "forearm_l",
+        "hand_l",
+        "thigh_l",
+        "shin_l",
+        "foot_l",
+        "upper_arm_r",
+        "forearm_r",
+        "hand_r",
+        "thigh_r",
+        "shin_r",
+        "foot_r"
+      ],
+      "hierarchy": [
+        {
+          "name": "ROOT",
+          "children": [
+            "ARMATURE",
+            "VISUAL"
+          ]
+        },
+        {
+          "name": "ARMATURE",
+          "children": [
+            "hips"
+          ]
+        },
+        {
+          "name": "hips",
+          "children": [
+            "spine",
+            "thigh_l",
+            "thigh_r"
+          ]
+        },
+        {
+          "name": "spine",
+          "children": [
+            "head",
+            "upper_arm_l",
+            "upper_arm_r"
+          ]
+        },
+        {
+          "name": "head",
+          "children": []
+        },
+        {
+          "name": "upper_arm_l",
+          "children": [
+            "forearm_l"
+          ]
+        },
+        {
+          "name": "forearm_l",
+          "children": [
+            "hand_l"
+          ]
+        },
+        {
+          "name": "hand_l",
+          "children": []
+        },
+        {
+          "name": "thigh_l",
+          "children": [
+            "shin_l"
+          ]
+        },
+        {
+          "name": "shin_l",
+          "children": [
+            "foot_l"
+          ]
+        },
+        {
+          "name": "foot_l",
+          "children": []
+        },
+        {
+          "name": "upper_arm_r",
+          "children": [
+            "forearm_r"
+          ]
+        },
+        {
+          "name": "forearm_r",
+          "children": [
+            "hand_r"
+          ]
+        },
+        {
+          "name": "hand_r",
+          "children": []
+        },
+        {
+          "name": "thigh_r",
+          "children": [
+            "shin_r"
+          ]
+        },
+        {
+          "name": "shin_r",
+          "children": [
+            "foot_r"
+          ]
+        },
+        {
+          "name": "foot_r",
+          "children": []
+        },
+        {
+          "name": "VISUAL",
+          "children": []
+        }
+      ],
+      "anchors": [],
+      "anchor_details": [],
+      "animations": [
+        "Idle",
+        "Walk"
+      ],
+      "animation_details": [
+        {
+          "name": "Idle",
+          "duration_s": 3.2,
+          "loop": true,
+          "in_place": true,
+          "channels": 6
+        },
+        {
+          "name": "Walk",
+          "duration_s": 1.12,
+          "loop": true,
+          "in_place": true,
+          "channels": 13
+        }
+      ],
+      "pending_animations": [
+        "Sit",
+        "Talk",
+        "Interact",
+        "React"
+      ],
+      "references": [
+        "kelly"
+      ],
+      "limitations": [
+        "Rig segmentado de peso rígido, sin retargeting probado",
+        "Posición de reposo usada para las dimensiones"
+      ]
     }
   ],
   "packages": {
     "A-001": "0.1.0",
     "A-002": "0.4.0",
-    "A-003": "0.1.0"
+    "A-003": "0.1.0",
+    "A-004": "0.2.2",
+    "A-005": "0.1.2"
   }
 }

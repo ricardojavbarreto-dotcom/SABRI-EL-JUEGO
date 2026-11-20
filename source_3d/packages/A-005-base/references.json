@@ -1,0 +1,43 @@
+[
+  {
+    "slug": "ricardo_uruguayo",
+    "name": "Ricardo Uruguayo",
+    "photos": [
+      5,
+      11
+    ],
+    "facial_photo": 11,
+    "skin": "#b86f5a",
+    "hair": "#2d2828",
+    "pants": "#333d48",
+    "build": 1.12,
+    "clothing_photo": 5
+  },
+  {
+    "slug": "gaston",
+    "name": "Gastón",
+    "photos": [
+      7,
+      9,
+      12,
+      13
+    ],
+    "facial_photo": 13,
+    "skin": "#966e69",
+    "hair": "#282527",
+    "pants": "#232427",
+    "build": 1.1
+  },
+  {
+    "slug": "david",
+    "name": "David",
+    "photos": [
+      10
+    ],
+    "facial_photo": 10,
+    "skin": "#5b352e",
+    "hair": "#262426",
+    "pants": "#a48b6b",
+    "build": 1.04
+  }
+]

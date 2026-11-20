@@ -111,6 +111,56 @@
       "applies_to": [
         "env.desk_cluster.001"
       ]
+    },
+    {
+      "reference_id": "reference.sabri.photos.001",
+      "title": "Dos fotografías de Sabri aportadas por Gasti",
+      "description": "La primera define la camisa estampada, los anteojos de sol y el pelo largo. La segunda aporta la forma del rostro. Altura aproximada indicada por Gasti, 1,68 m.",
+      "applies_to": [
+        "char.sabri.001"
+      ]
+    },
+    {
+      "reference_id": "ricardo_uruguayo",
+      "title": "Referencias de Ricardo Uruguayo",
+      "applies_to": [
+        "char.ricardo_uruguayo.001"
+      ]
+    },
+    {
+      "reference_id": "gaston",
+      "title": "Referencias de Gastón",
+      "applies_to": [
+        "char.gaston.001"
+      ]
+    },
+    {
+      "reference_id": "david",
+      "title": "Referencias de David",
+      "applies_to": [
+        "char.david.001"
+      ]
+    },
+    {
+      "reference_id": "nicolas",
+      "title": "Referencias de Nicolás",
+      "applies_to": [
+        "char.nicolas.001"
+      ]
+    },
+    {
+      "reference_id": "padre_conrado",
+      "title": "Referencias de Padre Conrado",
+      "applies_to": [
+        "char.padre_conrado.001"
+      ]
+    },
+    {
+      "reference_id": "kelly",
+      "title": "Referencias de Kelly",
+      "applies_to": [
+        "char.kelly.001"
+      ]
     }
   ]
 }
