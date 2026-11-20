@@ -81,25 +81,6 @@ function Player() {
  });
  return <group ref={ref} position={[-3.2,0,1.8]}><primitive object={model}/></group>;
 }
-function FixedGroundFog() {
- // World-space falloff: the desk is 4.70 x 1.20 m; the clear area
- // extends at least two metres beyond each edge before darkening.
- const material = useMemo(() => new THREE.ShaderMaterial({
-  transparent: true, depthWrite: false, uniforms: {},
-  vertexShader: `varying vec3 vWorld; void main(){vec4 world=modelMatrix*vec4(position,1.0);vWorld=world.xyz;gl_Position=projectionMatrix*viewMatrix*world;}`,
-  fragmentShader: `varying vec3 vWorld;
-   void main(){
-    vec2 p=abs(vWorld.xz);
-    float distanceOutside=max(p.x-4.7,p.y-2.8);
-    float opacity=smoothstep(0.0,5.0,distanceOutside);
-    gl_FragColor=vec4(0.0,0.0,0.0,opacity);
-   }`
- }), []);
- useEffect(() => () => material.dispose(), [material]);
- return <mesh position={[0,.012,0]} rotation={[-Math.PI/2,0,0]} renderOrder={4} material={material}>
-  <planeGeometry args={[200,200]}/>
- </mesh>;
-}
 function ExtendedFloor() {
  const { scene } = useGLTF(assetUrl('env.floor.001'));
  const model = useMemo(() => {
@@ -139,8 +120,7 @@ const options = [
 ];
 function Office({ phase, onInteract, onVisitor }: { phase: Phase; onInteract: (name: string) => void; onVisitor: () => void }) {
  return <group>
-  <ExtendedFloor/>\n  <FixedGroundFog/>
-  <Player/>
+  <ExtendedFloor/>\n  <Player/>
   <Model id="env.desk_cluster.001" onClick={() => onInteract('Puestos de trabajo')}/>
   {colleagues.map(person => <group key={person.id}>
    <Model id={person.id} position={person.position} rotation={person.rotation} animate onClick={() => onInteract(person.name)}/>
